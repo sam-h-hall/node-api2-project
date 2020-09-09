@@ -179,7 +179,7 @@ router.delete("/:id", (req, res) => {
     });
 });
 
-// clean this up and get it working
+// PUT "/api/posts/:id"
 router.put("/:id", (req, res) => {
   const {
     id
