@@ -75,15 +75,15 @@ A Comment in the database has the following structure:
 
 Configure the API to handle to the following routes:
 
-| Method | Endpoint                | Description                                                                                                                                                                 |
-| ------ | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| POST   | /api/posts              | Creates a post using the information sent inside the `request body`.                                                                                                        |
-| POST   | /api/posts/:id/comments | Creates a comment for the post with the specified id using information sent inside of the `request body`.                                                                   |
-| GET    | /api/posts              | Returns an array of all the post objects contained in the database.                                                                                                         |
-| GET    | /api/posts/:id          | Returns the post object with the specified id.                                                                                                                              |
-| GET    | /api/posts/:id/comments | Returns an array of all the comment objects associated with the post with the specified id.                                                                                 |
-| DELETE | /api/posts/:id          | Removes the post with the specified id and returns the **deleted post object**. You may need to make additional calls to the database in order to satisfy this requirement. |
-| PUT    | /api/posts/:id          | Updates the post with the specified `id` using data from the `request body`. Returns the modified document, **NOT the original**.                                           |
+| Method | Endpoint | Description |
+| --- | --- | --- |
+| POST | /api/posts | Creates a post using the information sent inside the `request body`. |
+| POST | /api/posts/:id/comments | Creates a comment for the post with the specified id using information sent inside of the `request body`. |
+| GET | /api/posts | Returns an array of all the post objects contained in the database. |
+| GET | /api/posts/:id | Returns the post object with the specified id. |
+| GET | /api/posts/:id/comments | Returns an array of all the comment objects associated with the post with the specified id. |
+| DELETE | /api/posts/:id | Removes the post with the specified id and returns the **deleted post object**. You may need to make additional calls to the database in order to satisfy this requirement. |
+| PUT | /api/posts/:id | Updates the post with the specified `id` using data from the `request body`. Returns the modified document, **NOT the original**. |
 
 #### Endpoint Specifications
 
@@ -197,13 +197,12 @@ When the client makes a `PUT` request to `/api/posts/:id`:
   - update the post document in the database using the new information sent in the `request body`.
   - return HTTP status code `200` (OK).
   - return the newly updated _post_.
-  
+
 ### Task 2b: Exit Ticket
 
 Once you begin, you will have 15 minutes to answer the questions [here](https://app.codesignal.com/public-test/qWhRyWPqYgxaT7GzJ/cnWWa5SxfpfGgm).
 
 The completion of these questions is mandatory for MVP. However, passing the quiz doesn't affect your standing as a Lambda School student whatsoever. This is Lambda School testing itself! Please answer honestly and to the best of your ability without using external references.
- 
 
 ### Task 3: Stretch Problems
 
